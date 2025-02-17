@@ -6,7 +6,7 @@ body{
 }
 
 .headerbackgroundimagestainedglass {
-    background-image: url(/images/pexels-pixabay-208414.png);
+    background-image: url(./images/pexels-pixabay-208414.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
