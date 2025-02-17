@@ -1,0 +1,449 @@
+body{
+    background-color: #F7F7F4; 
+    overflow-x: hidden;
+}
+
+/* CASE 3 RESPONSIVE MULTI DEVICE DESIGN. */
+header nav ul li a{
+    color:#050b3b;
+}
+
+.PDheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F7F7F4;
+}
+
+
+.PDheader section{
+    line-height: clamp(1rem, 10vw, 15rem);
+    margin-bottom: 7em;
+    margin-top: 7em;
+    margin-left: 15em;
+    margin-right:15em;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.PDheader  h1{
+color: #0B0A45;
+font-family: Aleo;
+font-size: 190px;
+font-style: normal;
+font-weight:200;
+margin-bottom: 0.3em;
+}
+
+.PDheader h2{
+color: #0B0A45;
+font-family: Aleo;
+font-size: 48px;
+font-weight: 200;
+line-height: normal;
+}
+
+.PDheader h2 strong{
+color: #0B0A45;
+font-family: Aleo;
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.purplecircle{
+    position: absolute;
+    width: 40em;
+    height:40em;
+    top: 5em;
+    left: -8em;
+    z-index: 5;
+    border-radius: 100%;
+    border-radius: 832px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(99, 98, 144, 0.50) 9.05%, rgba(245, 245, 245, 0.12) 100%);
+    filter: blur(100%);
+    flex-shrink: 0;
+} 
+
+
+.greencircle{
+    position: absolute;
+    width: 40em;
+    height:40em;
+    top: 10em;
+    right: -30em;
+    z-index: 5;
+    border-radius: 100%;
+    border-radius: 832px;
+    border-radius: 1295px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(100, 127, 87, 0.73) 0%, rgba(245, 245, 245, 0.55) 100%);
+    filter: blur(2px);
+    width: 1295px;
+    height: 1256px;
+    flex-shrink: 0;
+} 
+
+.PDheader section div:first-of-type{
+    z-index: 100;
+}
+
+/* Case study 1 main */
+
+.PDmain {
+    background-color: #F7F7F4;
+    margin-left: 15em;
+    margin-right: 15em;
+    z-index: 100;
+}
+
+.PDmain section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    margin-left: 15em;
+    margin-right: 10em;
+    margin-bottom: 3em;
+}
+
+.PDmain section div{
+    width: 100%;
+    padding: 1em;
+}
+
+.PDmain h3{
+color: #0B0A45;
+font-family: Aleo;
+font-size: 48px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+z-index: 10;
+}
+
+.PDmain p{
+color: #0B0A45;
+font-family: Aleo;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+z-index: 10;
+font-size: 1.5em;
+}
+
+.PDmain img{
+    max-width: 100%;
+    z-index: 100;
+}
+
+.PDmain section div h3{
+    max-width: 100%;
+    z-index: 10;
+}
+
+.PDmain section div p{
+    max-width: 80%;
+}
+
+/* classes within the main section  */
+
+.PDinteractiveAnimation div h3{
+    align-items: center;
+}
+.PDinteractiveAnimation div p{
+    align-items: center;
+    max-width: 50%;
+    margin-bottom: 0em;
+}
+
+.PDinteractiveAnimationimage div img{
+    margin-top: 0em;;
+}
+
+.PDtheExhibition video{
+    max-width: 80%;
+}
+
+/* FOOTER */
+
+.footerstainedglasstories{
+    background-color: #0F21A3;
+}
+.footerstainedglasstories ul li{
+color:#ffffff;
+}
+
+.footerstainedglasstories h3{
+color:#ffffff;
+}
+
+.footerstainedglasstories h1{
+color:#F0EDE8;
+}
+.footerstainedglasstories h3{
+color:#F0EDE8;
+
+}.footerstainedglasstories strong{
+color:#F0EDE8;
+}
+
+/* media query voor groot scherm */
+@media only screen and (max-width:1600px){
+
+   .PDheader h1 {
+    color: #050b3b;
+    font-family: Aleo;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 140px;
+    margin-bottom: 0.3em;
+    }
+
+    .PDheader h2{
+    font-size:2.3em;
+    }
+
+    .PDheader section {
+        line-height: clamp(1rem, 10vw, 15rem);
+        margin-bottom: 7em;
+        margin-top: 7em;
+        margin-left: 5em;
+        margin-right: 5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        }
+
+      .PDmain {
+        background-color: #F7F7F4;
+        margin-left: 5em;
+        margin-right: 5em;}
+    
+        .PDmain section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3em;
+            margin-left: 3em;
+            margin-right: 3em;
+            margin-bottom: 3em;
+            }
+
+
+            .greencircle{
+                position: absolute;
+                width: 20em;
+                height:10em;
+                top: -10em;
+                right: -30em;
+                z-index: 5;
+                border-radius: 100%;
+                border-radius: 832px;
+                border-radius: 1295px;
+                background: radial-gradient(50% 50% at 50% 50%, rgba(100, 127, 87, 0.73) 0%, rgba(245, 245, 245, 0.55) 100%);
+                filter: blur(2px);
+                width: 1295px;
+                height: 1256px;
+                flex-shrink: 0;
+            } 
+
+            .PDmain section div {
+                width: 100%;
+                padding: 1em;
+                margin-left: 0em;
+                }
+
+            .PDmain section div video{
+                max-width: 100%;
+                }
+
+    }
+
+
+@media only screen and (min-width:1800px){
+
+.headerVisualinterfacedesign div:first-of-type{
+    margin-bottom: 8em;
+    margin-right: 30em;
+}
+
+
+.headerVisualinterfacedesign h1{
+    width: 10%;
+    font-size: 10em;
+}
+}
+
+@media only screen and (max-width: 950px) {
+
+/* HEADER SMALL */
+.PDheader section{
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 0em;
+    flex-wrap: wrap;
+}
+
+
+.PDheader div:first-of-type{
+z-index: 99;
+margin: 0em;
+margin-bottom: 10em;
+}
+
+.PDheader div:first-of-type h2{
+    z-index: 99;
+    margin: 0em;
+    margin-top: 1em;
+    }
+
+.PDheader h1{
+    width: 100%;
+    font-size: 8em;
+    line-height: 0.9em;
+}
+
+.PDheader h2{
+    width: 100%;
+    margin: 0em;
+    margin-top: 0em;
+    line-height: 1em;
+    font-size: 1.5em;
+    float: left;
+}
+
+.PDheader h2 strong{
+    color: #1e014e;
+    font-family: Aleo;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    }
+
+.PDheader section div img{
+    max-width: 100%;
+    position: absolute;
+    z-index: 1;
+    right: 6em;
+    height: 13em;
+    top: 18em;
+    z-index: 10;
+
+}
+
+/* MAIN */
+
+.PDmain{
+    margin-left: 1em;
+    margin-right: 1em;
+    flex-wrap: wrap;
+    margin-top: 0em;  
+    z-index: 100;
+}
+
+.PDmain section{
+        margin-left: 0em;
+        margin-right: 0em;
+        flex-wrap: wrap;
+        margin-top: 0em;
+        z-index: 100;
+    }
+
+    .PDmain section h3{
+        margin-bottom: 0.5em;
+        font-size: 2em;
+        z-index: 100;
+    }
+
+    .PDmain section p{
+        margin-bottom: 0.5em;
+        font-size: 1.2em;
+        z-index: 100;
+    }
+
+    .PDmain section div{
+        max-width: 100%;
+        margin: 0;
+        margin-top: 0em;
+        margin-left: 0em;
+        z-index: 100;
+    }
+
+
+    .PDmain section:first-of-type{
+    align-items:start;
+    gap:0em;
+    width: 100%;
+    margin-right:0em;
+    margin-left:0em;
+    z-index: 100;
+    }
+
+.PDinteractiveAnimation div h3{
+    align-items: center;
+    margin-left: 0em;
+}
+.PDinteractiveAnimation div p{
+    align-items: center;
+    margin-left: 0em;
+    max-width: 50%;
+    margin-bottom: 0em;
+}
+
+.PDinteractiveAnimationimage div img{
+    margin-left: 0em;
+    margin-top: 0em;;
+}
+
+
+.PDtheExhibition video{
+    max-width: 100%;
+}
+
+.PDanimationvideo video{
+    background-color: #050b3b;
+    width: 100%;
+}
+
+
+.purplecircle{
+    position: absolute;
+    width: 20em;
+    height:20em;
+    top: 5em;
+    left: -8em;
+    z-index: 5;
+    border-radius: 100%;
+    border-radius: 832px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(99, 98, 144, 0.50) 9.05%, rgba(245, 245, 245, 0.12) 100%);
+    filter: blur(100%);
+    flex-shrink: 0;
+} 
+
+
+.greencircle{
+    position: absolute;
+    width: 20em;
+    height:20em;
+    top: 25em;
+    right: -3em;
+    z-index: 5;
+    border-radius: 100%;
+    border-radius: 832px;
+    border-radius: 1295px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(100, 127, 87, 0.73) 0%, rgba(245, 245, 245, 0.55) 100%);
+    filter: blur(2px);
+    flex-shrink: 0;
+    border-width: 100%;
+} }
+
+/* Met meer tijd kan ik hetvolgende doen:
+- groene en paarse achtergrond.
+- meer media queries
+logo andere kleur? 
+ */

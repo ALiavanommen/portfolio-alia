@@ -1,0 +1,305 @@
+
+/*CSS VOOR CASE 1: stained glass*/
+
+body{
+    overflow-x: hidden;
+}
+
+.headerbackgroundimagestainedglass {
+    background-image: url(/images/pexels-pixabay-208414.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #494639;
+}
+
+
+.headerbackgroundimagestainedglass section{
+    margin-left: 7em;
+    line-height: clamp(1rem, 10vw, 15rem);
+    margin-bottom: 7em;
+}
+
+.headerbackgroundimagestainedglass h1{
+    color:#D9D4C0;
+    font-family: "Big Shoulders Text", serif;
+    font-size: clamp(13vw, 15vw, 10rem);
+    align-items: start;
+    font-weight: 400;
+    white-space: nowrap;
+    display: inline;
+    line-height: 1;
+}
+
+.headerbackgroundimagestainedglass h2{
+    color:#D9D4C0;
+    font-family: "STIX Two Text", serif;
+    font-style: normal;
+    font-size: clamp(1rem, 5vw, 3rem);
+    font-weight: 250;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.headerbackgroundimagestainedglass section{
+    max-width: max-content;
+}
+
+/* Case study 1 main */
+
+.stainedglassstories {
+    background-color: #494639;
+}
+
+.stainedglassstories section{
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+
+
+.stainedglassstories h3{
+    color: #D9D4C0;
+    font-family: "Big Shoulders Text", serif;
+    font-size: clamp(6em, 0.5rem, 0.005rem);
+    margin-top: 1em;
+}
+
+.stainedglassstories p{
+    color: #D9D4C0;
+    font-family: "STIX Two Text", serif;
+    font-size: clamp(0.01rem, 5vw, 1.2rem);
+}
+
+.stainedglassstories strong{
+    color: #d7d0b3;
+}
+
+.stainedglassstories img{
+    max-width: 80%;
+}
+
+/*Main Clases stained glass*/
+
+.stainedglasschallenge{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-left:2em;
+    margin-right: 2em;
+}
+
+.stainedglasschallenge div:first-of-type{
+    max-width: 30%;
+    margin-left: 7em;
+}
+
+.stainedglasschallenge div:nth-of-type(2n){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:2em;
+}
+
+.stainedglasschallenge div:nth-of-type(2n) img{
+    object-fit: contain;
+}
+
+.stainedglssmypart{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-left:2em;
+    margin-right: 2em;
+    margin-top: 7em;
+}
+
+.stainedglssmypart div:first-of-type{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:0em;
+}
+
+.stainedglssmypart div:first-of-type img{
+    object-fit: contain;
+    margin-left: 0;
+}
+
+.stainedglssmypart div:last-of-type{
+    max-width: 40%;
+    margin-left: 2em;
+}
+
+.stainedglasswoodhand{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-left:2em;
+    margin-right: 2em;
+    margin-top: 7em;
+}
+
+.stainedglasswoodhand div{
+    max-width: 30%;
+}
+
+.stainedglasswoodhand img{
+    max-width: 100%;
+}
+
+.wireframesimage{
+   text-align: center;
+   margin: 7em;
+}
+
+.wireframesimage img{
+    vertical-align: middle;
+}
+
+.Glassstoriesunityh3p{
+    max-width: 40%;
+    margin-left: 6em;
+}
+
+.Glassstoriesunity{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-left:2em;
+    margin-right: 2em;
+}
+
+.Glassstoriesunity div{
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;
+    margin-left:2em;
+}
+
+.Glassstoriesunity video{
+    margin:2em;
+    max-width: 500;
+}
+
+.stainedglassresults{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-left:2em;
+    margin-right: 2em;
+    margin-top: 7em;
+}
+
+.stainedglassresults div:first-of-type{
+    max-width: 40%;
+    margin-right: 2em;
+}
+
+.stainedglassresults div:nth-of-type(2n){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:0em;
+}
+
+.stainedglassresults div:nth-of-type(2n) img{
+    object-fit: contain;
+    margin-left: 0;
+    max-width: 100%;
+}
+
+
+/*FOOTER GLASS STORIES */
+
+.footerVD link {
+    background-color: #494639;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+.headerbackgroundimagestainedglass{
+    margin-left: 0em;
+    margin-right: 0em;
+    flex-wrap: wrap;
+}
+
+
+.headerbackgroundimagestainedglass h1{
+    width: 10%;
+}
+
+.headerbackgroundimagestainedglass h2{
+    width: 50%;
+    margin: 0em;
+    margin-top: 2em;
+    line-height: 1em;
+}
+
+    .stainedglassstories section{
+        margin-left: 1em;
+        margin-right: 1em;
+        flex-wrap: wrap;
+        margin-top: 0em;
+    }
+
+    .stainedglasschallenge div{
+        width: 100%;
+        margin: 0em;
+        margin-top: 0.5em;
+    }
+
+    .stainedglassstories section h3{
+        margin-top: 0.5em;
+        font-size: em;
+    }
+
+    .stainedglasschallenge div:first-of-type {
+        max-width: 100%;
+        margin-left: 0em;
+    }
+
+    .stainedglasschallenge div:nth-of-type(2) {
+        width: 100%;
+        margin: 0em;
+        margin-top: 2em;
+    }
+
+    .stainedglssmypart div:first-of-type {
+        order: 1;
+        }
+
+    .stainedglssmypart div:last-of-type {
+        max-width: 100%;
+    }
+
+    .stainedglssmypart div:last-of-type {
+        margin-left: 0em;
+    }
+
+    .stainedglassresults div:first-of-type {
+        max-width: 100%;
+        margin-right: 2em;
+        margin-top: 0em;
+    }
+
+    .stainedglassstories section div{
+        max-width: 100%;
+        margin: 0;
+        margin-top: 0.5em;
+    }
+
+    .stainedglasswoodhand img{
+        max-width: 70%;
+        margin-left: 5em;
+    }
+  }

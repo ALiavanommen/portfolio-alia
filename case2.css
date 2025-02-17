@@ -1,0 +1,328 @@
+
+/**************/
+/*VISUALDESIGN*/
+/**************/
+
+body{
+    overflow-x: hidden;
+}
+
+.bodyvisualinterfacedesign{
+    background-color: #C1C2B4;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow-x: hidden;
+}
+
+
+/*header*/
+.headerVisualinterfacedesign{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #494639;
+    background-color: #C1C2B4;
+    }
+
+.headerVisualinterfacedesign section{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #C1C2B4;
+    }
+    
+.headerVisualinterfacedesign section img{
+    max-width: 100%;
+    position: absolute;
+    z-index: 1;
+    right: 5em;
+    height: 35em;
+    top: 15em;
+    } 
+
+
+.headerVisualinterfacedesign div:first-of-type{
+    z-index: 99;
+    margin: 0em;
+    margin-bottom: 8em;
+    }
+    
+.headerVisualinterfacedesign h1{
+    font-family: "Encode Sans Expanded", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 7em;
+    text-transform: uppercase;
+}
+    
+.headerVisualinterfacedesign h2{
+    font-family: Inter;
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: normal;
+    margin-right: 25em;
+    }
+    
+    
+.redboxheader{
+    background-color: #D85549;
+    position: absolute;
+    width: 15em;
+    height:15em;
+    top: 6em;
+    left: 7em;
+    z-index: 1;
+    }
+
+    strong{
+        color:#c72415;
+    }
+    
+    /*main*/
+    
+    .Visualinterfacedesign{
+        background-color: #C1C2B4;
+        font-family: Inter;
+    }
+
+    .Visualinterfacedesign section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5em;
+        margin-left: 10em;
+        margin-right: 10em;
+        margin-bottom: 3em;
+    }
+
+
+    .Visualinterfacedesign section div:nth-last-of-type(1){
+        width: 100%;
+    }
+
+    .Visualinterfacedesign section div:nth-last-of-type(2){
+        width: 100%;
+    }
+    .Visualinterfacedesign section div h3, p{
+        max-width: 100%;
+    }
+
+    .Visualinterfacedesign section div p{
+        max-width: 80%;
+    }
+
+    .Visualinterfacedesign h3{
+        font-family: "Encode Sans Expanded", serif; 
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 48px;
+        font-style: normal;
+    }
+
+    .Visualinterfacedesign p{
+        font-size: 1.3em;
+    }
+    
+    .Visualinterfacedesign img{
+        max-width: 100%;
+    }
+
+    .Visualinterfacedesign video{
+    width: 100%; /* Make image take the full width of its container */
+    transition: all 0.3s ease; /* Smooth transition for image darkening */
+    max-width: 100%; /* Limit the maximum width of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Centers the image inside the container */
+    display: block; /* Ensures the image is displayed as a block element */
+    border-radius: 2%;
+}
+    
+.Visualinterfacedesign section:first-of-type{
+    align-items:start;
+    gap:2em;
+    width: 70%;
+    margin-right:10em;
+    margin-left:23em;
+}
+
+.VDfinalresult p{
+    width: 40%;
+}
+
+.laatsteimageVD{
+    width: 50%;
+    margin-left: 25em;
+}
+
+/* FOOTER */
+
+
+.VD {
+    background-color: #494639;
+}
+
+.footerstainedglasstories ul li{
+    color:#d7d0b3;
+}
+
+.footerstainedglasstories h3{
+    color:#d7d0b3;
+}
+
+.footerstainedglasstories h1{
+    color:#d7d0b3;
+}
+.footerstainedglasstories h3{
+    color:#d7d0b3;
+
+}.footerstainedglasstories strong{
+    color:#e8e5db;
+}
+
+
+    /* media query voor groot scherm */
+   
+@media only screen and (min-width:1800px){
+
+    .headerVisualinterfacedesign div:first-of-type{
+        margin-bottom: 8em;
+        margin-right: 30em;
+    }
+
+
+    .headerVisualinterfacedesign h1{
+        width: 10%;
+        font-size: 10em;
+    }
+}
+
+@media only screen and (max-width: 1800px){
+
+.headerVisualinterfacedesign section img {
+    width: 40%;
+    height: 50%;
+    margin: 0em;
+    margin-top: 4em;
+    line-height: 1em;
+    }
+
+.Visualinterfacedesign section:first-of-type {
+    align-items: start;
+    gap: 3em;
+    width: 100%;
+    margin-right: 5em;
+    margin-left: 5em;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 950px) {
+
+    /* HEADER SMALL */
+    .headerVisualinterfacedesign{
+        margin-left: 0em;
+        margin-right: 0em;
+        margin-bottom: 0em;
+        flex-wrap: wrap;
+    }
+    
+
+    .headerVisualinterfacedesign div:first-of-type{
+    z-index: 99;
+    margin: 0em;
+    margin-bottom: 30em;
+    }
+    
+    .headerVisualinterfacedesign h1{
+        width: 10%;
+        font-size: 4em;
+    }
+    
+    .headerVisualinterfacedesign h2{
+        width: 60%;
+        margin: 0em;
+        margin-top: 0em;
+        line-height: 1em;
+        font-size: 2em;
+        float: right;
+
+    }
+
+    .headerVisualinterfacedesign section img{
+        width: 80%;
+        height: 40%;
+        margin: 0em;
+        margin-top: 4em;
+        line-height: 1em;
+    }
+    
+    .redboxheader{
+    width: 8em;
+    height:8em;
+    top: 6em;
+    left: 3em;
+    z-index: 1;
+    }
+
+    /* MAIN */
+
+    .Visualinterfacedesign section{
+            margin-left: 1em;
+            margin-right: 1em;
+            flex-wrap: wrap;
+            margin-top: 0em;
+        }
+    
+    .Visualinterfacedesign section h3{
+            margin-top: 1em;
+            font-size: 2em;
+        }
+
+    .Visualinterfacedesign section div{
+            max-width: 100%;
+            margin: 0;
+            margin-top: 0.5em;
+            margin-left: 1em;
+        }
+    
+
+    .Visualinterfacedesign section:first-of-type{
+    align-items:start;
+    gap:2em;
+    width: 100%;
+    margin-right:0em;
+    margin-left:1em;
+    }
+
+    .VDfinalresult p{
+    width: 100%;
+    }
+
+.laatsteimageVD{
+    width: 80%;
+    margin-left: 3em;
+}
+
+.Visualinterfacedesign section:first-of-type {
+    align-items: start;
+    gap: 2em;
+    width: 100%;
+    margin-right: 1em;
+    margin-left: 1em;
+    }
+
+    }
+    
+    /* Met meer tijd kan ik hetvolgende doen:
+    - rode doosjes
+    - meer media queries
+    filmpje laten werken
+    link naar prototype
+    -strong */

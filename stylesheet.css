@@ -1,0 +1,306 @@
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* custum properties */
+
+:root {
+    --color-text:#EBE8E8;
+    --color-p:rgb(160, 161, 175);
+    --color-background:#90948B;
+    --link-color:white;
+    --link-visited-color:white;
+    --link-background-color: white;
+    --border-color: #EBE8E8;
+    --link-color:white;
+    --link-visited-color:rgb(160, 161, 175);
+    --link-background-color:rgb(58, 68, 92);
+    --link-active-color:rgb(168, 167, 205);
+}
+
+/* header HOME */
+
+strong{
+    color:rgb(41, 55, 47);
+}
+
+body{
+    background-color:#F7F7F7;
+}
+
+main{
+    background-color: #F7F7F7;
+}
+
+.backgroundimage {
+    background-image: url(/images/HOME/backgroundimagecrop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #90948B;
+}
+
+.backgroundimage section{
+    margin-left: 5em;
+    line-height: clamp(1rem, 10vw, 15rem);
+}
+
+.backgroundimage h1{
+    color:#EBE8E8;
+    font-family: "Expletus Sans", serif;
+    font-size: clamp(13vw, 15vw, 10rem);
+    align-items: start;
+    font-weight:lighter;
+    white-space: nowrap;
+    display: inline;
+}
+
+.backgroundimage h2{
+    color:#EBE8E8;
+    font-family: Inter;
+    font-size: clamp(1rem, 5vw, 7rem);
+    font-weight: 250;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.backgroundimage section{
+    max-width: max-content;
+}
+
+.backgroundimage span:first-of-type{
+    font-size: clamp(4vw, 5vw, 10rem);
+    display: inline;
+}
+
+.backgroundimage span:last-of-type{
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+nav{
+display: flex;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 15px 5em 15px 5em;
+z-index: 300;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav ul li a{
+color:#EBE8E8;
+font-family: Inter;
+font-size: clamp(2em, 0.5rem, 0.005rem);
+font-weight: 200;
+z-index: 1;
+letter-spacing: 4px;
+text-size-adjust: 100%;
+text-decoration: none;
+margin-left: 1em;
+position: relative;
+}
+
+/*MAIN CASE STUDIES*/
+
+.rightProject {
+    position: relative;
+    overflow: hidden; /* Ensures the hover effect is contained */
+    margin: 20px; /* Adds space between each project */
+    padding: 10px; /* Adds some padding around the projects */
+}
+
+.rightProject img {
+    width: 100%; /* Make image take the full width of its container */
+    transition: all 0.3s ease; /* Smooth transition for image darkening */
+    max-width: 80%; /* Limit the maximum width of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Centers the image inside the container */
+    display: block; /* Ensures the image is displayed as a block element */
+    border-radius: 4%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.rightProject video {
+    width: 100%; /* Make image take the full width of its container */
+    transition: all 0.3s ease; /* Smooth transition for image darkening */
+    max-width: 80%; /* Limit the maximum width of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Centers the image inside the container */
+    display: block; /* Ensures the image is displayed as a block element */
+    border-radius: 4%;
+}
+
+/* Initially hide the text (h3 and cite) */
+.rightProject div:last-child {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: rgba(255, 255, 255, 0); /* Make text invisible initially */
+    transition: color 0.3s ease, opacity 0.3s ease; /* Smooth transition for text color and opacity */
+    opacity: 0; /* Initially hide the text completely */
+}
+
+/* Style for h3 */
+.rightProject h3 {
+    font-weight: normal; /* Make the text bold */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    font-family: inter;
+    font-size: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+/* Style for cite */
+.rightProject cite {
+    font-style: oblique;
+    font-weight: normal;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    font-family: Inter;
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 6em;
+    margin-bottom: 3em;
+}
+
+/* On hover, darken the image to black and show the text */
+.rightProject:hover img {
+    filter: brightness(50%); /* Darkens the image to black on hover */
+}
+
+.rightProject:hover div:last-child {
+    color: rgba(255, 255, 255, 1); /* Makes text white on hover */
+    opacity: 1; /* Makes the text fully visible on hover */
+}
+
+/* On hover, change the styling of h3 and cite */
+.rightProject:hover h3 {
+    color:#EBE8E8; /* Change the color of h3 on hover */
+    }
+
+.rightProject:hover cite {
+    color:#EBE8E8/* Change the color of cite on hover */
+}
+
+/* For smaller screens, ensure text doesn't overlap */
+@media (max-width: 768px) {
+    .rightProject div:last-child {
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .rightProject h3 {
+        font-size: 20px; /* Smaller font size for h3 on mobile */
+    }
+
+    .rightProject cite {
+        font-size: 14px; /* Smaller font size for cite on mobile */
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: #90948B;
+    display: flex;
+    flex-direction: column; 
+    padding: 3em;
+    gap: 2em;
+}
+
+footer h1 {
+    width: 100%;
+    color: #EBE8E8;
+    font-family: "Hiragino Kaku Gothic Pro";
+    font-size: clamp(0.001rem, 10vw, 10rem);
+    font-weight: 600;
+    text-align: center;
+    grid-column: span 3; /* Span both columns */
+}
+
+footer h3 {
+    color: #EBE8E8;
+    font-family: "Hiragino Kaku Gothic Pro";
+    font-size: clamp(1vw, 5vw, 2rem);
+    font-weight: 600;
+    text-align: start;
+    min-height: 60px; /* Set a minimum height to align headings */
+}
+
+footer article{
+    width: 100%;
+}
+
+footer section{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    justify-content: space-around;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+footer section:last-of-type{
+    margin-top: 2.5em;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    color: #F7F7F7;
+    font-family: "Hiragino Kaku Gothic Pro";
+    font-size: clamp(0.001rem, 5vw, 1rem);
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+
+    header nav{
+        font-size: 0.7em;
+    }
+
+    .rightProject:hover h3{
+        margin-left: 4em;
+    }
+
+    footer section{
+        flex-direction: column;
+        margin: 1em;
+    }
+
+    footer section article{
+        max-width: 80%;
+    }
+}
